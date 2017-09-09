@@ -63,7 +63,7 @@ list(sorted(i[0:10]))+list(reversed(i[10:21]))
 
 8. 使用循环和列表推导式两种方法求解百钱买百鸡问题。假设大鸡5元一只，中鸡3元一只，小鸡1元三只，现有100元钱想买100只鸡，有多少种买法？
 ```
-[(x,y,100-x,y) for x in range(34) for y in range(100) if 3*x+y+(100-x-y)/3 == 100]
+[(x,y,100-x,y) for x in range(21) for y in range(33) if 5*x+3*y+(100-x-y)/3 == 100]
 ```
 
 9. 编写程序，在D盘根目录下创建一个文本文件test.txt，并向其中写入字符串hello world。
