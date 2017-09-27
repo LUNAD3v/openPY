@@ -132,14 +132,12 @@ def quick_sort(items):
 5,6两题思路一样，先打一个随机列表：
 ```
 import random
-lst = []
-for i in range(1,21):
-    lst.append(random.randint(1,89))
+lst = [random.randint(0,89) for c in range(20)]
 ```
 
 第6题：
 ```
-list(sorted(i[0:10]))+list(reversed(i[10:21]))
+list(sorted(lst[0:10]))+list(reversed(lst[10:21]))
 ```
 
 ### 使用循环和列表推导式两种方法求解百钱买百鸡问题。假设大鸡5元一只，中鸡3元一只，小鸡1元三只，现有100元钱想买100只鸡，有多少种买法？
