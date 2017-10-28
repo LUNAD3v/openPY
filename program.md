@@ -67,7 +67,7 @@ def insertion_sort(items):
                         items[j], items[j-1] = items[j-1], items[j]
                         j -= 1
 ```
-3. Merge Sort（暂时想不到中文翻译）
+3. 归并排序
 ```
 def merge_sort(items):
         """ Implementation of mergesort """
